@@ -1,6 +1,6 @@
 # Mikrotik Winbox v4 (Beta)
 
-This flake is set to grab a copy of the latest beta from Mikrotik's website, and uses their icon to create a desktop file. The version update is a manual process, however I use winbox almost daily so I should be able to keep up with updates when Mikrotik releases them.
+This flake is set to grab a copy of the latest beta from Mikrotik's website, and uses their icon to create a desktop file. The version update is a manual process for me. I do, however, use winbox almost daily so I should be able to keep up with updates when Mikrotik releases them.
 
 ## Usage
 
@@ -45,5 +45,5 @@ This is a very brief overview of installing with flakes. This package was built 
 inputs.std.follows = "std";
 ```
 
-Also, the derivation is built off of `unstable` as that is what I use as a daily driver, you should be able to build with a stable release branch, as the application uses standard libraries, however I have not expressly tested that setup.
+Also, the derivation is built off of the `nixos-unstable` nixpkgs branch as that is what I use as a daily driver, you should be able to build with a stable release branch, as the application uses standard libraries, however I have not expressly tested that setup.
 
