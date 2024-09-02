@@ -52,5 +52,11 @@ in rec {
       install -D $src/assets/img/winbox.png $out/share/icons/hicolor/symbolic/apps/winbox.png
       runHook postInstall
     '';
+    meta = with nixpkgs.lib; {
+      homepage = "https://mt.lv/winbox4";
+      description = "Mikrotik WinBox Application for Linux";
+      platforms = platforms.linux;
+      license = licenses.unfreeRedistributable;
+    };
   };
 }
